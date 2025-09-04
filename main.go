@@ -6,18 +6,23 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"os"
 	"strconv"
 
-	"github.com/gorilla/mux"
 	"context"
+
 	"github.com/go-redis/redis/v8"
+	"github.com/gorilla/mux"
 )
 
 var quotes []interface{}
 
 func loadQuotes() {
 	redisHost := "localhost"
-	redisPort := "16379" // TODO: read from REDISPORT env variable
+	redisPort := os.Getenv("REDISPORT")
+	if redisPort == "" {
+		redisPort = "6379"
+	}
 	ctx := context.Background()
 	redisClient := redis.NewClient(&redis.Options{
 		Addr: fmt.Sprintf("%s:%s", redisHost, redisPort),

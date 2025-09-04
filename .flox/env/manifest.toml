@@ -2,7 +2,7 @@
 ##
 ##   _Everything_ you need to know about the _manifest_ is here:
 ##
-##               https://flox.dev/docs/concepts/manifest
+##   https://flox.dev/docs/reference/command-reference/manifest.toml/
 ##
 ## -------------------------------------------------------------------
 # Flox manifest version managed by Flox CLI
@@ -66,9 +66,6 @@ on-activate = """
 ##  $ flox services status            <- Status of running services
 ##  $ flox activate --start-services  <- Activates & starts all
 ## ------------------------------------------------------------------
-[services]
-app.command = "go run main.go"
-load_quotes.command = "redis-cli -p $REDISPORT SET quotesjson \"$(cat quotes.json)\""
 
 
 ## Include ----------------------------------------------------------
@@ -76,7 +73,7 @@ load_quotes.command = "redis-cli -p $REDISPORT SET quotesjson \"$(cat quotes.jso
 ## ------------------------------------------------------------------
 [include]
 environments = [
-  { remote = "flox/redis" }
+    { remote = "flox/redis" }
 ]
 
 
@@ -84,15 +81,16 @@ environments = [
 ##  $ flox build
 ##  $ flox publish
 ## ------------------------------------------------------------------
-[build]
-# [build.myproject]
-# description = "The coolest project ever"
-# version = "0.0.1"
-# command = """
-#   mkdir -p $out/bin
-#   cargo build --release
-#   cp target/release/myproject $out/bin/myproject
-# """
+[build.quotes-app]
+version = "0.0.1"
+description = "Quotes App written in Go"
+command = """
+  mkdir -p $out/{lib,bin}
+  cp -pr quotes.json $out/lib
+	go mod tidy
+  go build -trimpath -o $out/bin/quotes-app-go main.go
+  chmod +x $out/bin/quotes-app-go
+"""
 
 
 ## Other Environment Options -----------------------------------------
@@ -106,14 +104,3 @@ environments = [
 # ]
 # Uncomment to disable CUDA detection.
 # cuda-detection = false
-
-[build.quotes-app]
-version = "0.0.1"
-description = "Quotes App written in Go"
-command = """
-  mkdir -p $out/{lib,bin}
-  cp -pr quotes.json $out/lib
-	go mod tidy
-  go build -trimpath -o $out/bin/quotes-app-go main.go
-  chmod +x $out/bin/quotes-app-go
-"""
