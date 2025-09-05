@@ -45,7 +45,7 @@
     },
     "build": {
       "quotes": {
-        "command": "mkdir -p $out/{lib,bin}\ncp -pr quotes.json $out/lib\ngo mod tidy\ngo build -trimpath -o $out/bin/quotes-app-go main.go\nchmod +x $out/bin/quotes-nixcon\n",
+        "command": "mkdir -p $out/{lib,bin}\ncp -pr quotes.json $out/lib\ngo mod tidy\ngo build -trimpath -o $out/bin/quotes-app-go main.go\nchmod +x $out/bin/quotes-app-go\n",
         "version": "0.0.1",
         "description": "The quotes app"
       }
@@ -548,7 +548,7 @@
       },
       "build": {
         "quotes": {
-          "command": "mkdir -p $out/{lib,bin}\ncp -pr quotes.json $out/lib\ngo mod tidy\ngo build -trimpath -o $out/bin/quotes-app-go main.go\nchmod +x $out/bin/quotes-nixcon\n",
+          "command": "mkdir -p $out/{lib,bin}\ncp -pr quotes.json $out/lib\ngo mod tidy\ngo build -trimpath -o $out/bin/quotes-app-go main.go\nchmod +x $out/bin/quotes-app-go\n",
           "version": "0.0.1",
           "description": "The quotes app"
         }

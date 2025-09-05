@@ -92,7 +92,7 @@ mkdir -p $out/{lib,bin}
 cp -pr quotes.json $out/lib
 go mod tidy
 go build -trimpath -o $out/bin/quotes-app-go main.go
-chmod +x $out/bin/quotes-nixcon
+chmod +x $out/bin/quotes-app-go
 """
 
 
