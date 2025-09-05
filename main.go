@@ -21,7 +21,7 @@ func loadQuotes() {
 	redisHost := "localhost"
 	redisPort := os.Getenv("REDISPORT")
 	if redisPort == "" {
-		redisPort = "6379"
+		redisPort = "16379"
 	}
 	ctx := context.Background()
 	redisClient := redis.NewClient(&redis.Options{

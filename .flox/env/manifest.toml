@@ -25,7 +25,7 @@ httpie.pkg-path = "httpie"
 ##      as well as [hook], [profile] scripts and [services] below.
 ## -------------------------------------------------------------------
 [vars]
-# INTRO_MESSAGE = "It's gettin' Flox in here"
+REDISPORT = "6379"
 
 
 ## Activation Hook ---------------------------------------------------
@@ -66,6 +66,8 @@ on-activate = """
 ##  $ flox services status            <- Status of running services
 ##  $ flox activate --start-services  <- Activates & starts all
 ## ------------------------------------------------------------------
+[services]
+app.command = "go run main.go"
 
 
 ## Include ----------------------------------------------------------
@@ -81,15 +83,16 @@ environments = [
 ##  $ flox build
 ##  $ flox publish
 ## ------------------------------------------------------------------
-[build.quotes-app]
+[build]
+[build.quotes]
+description = "The quotes app"
 version = "0.0.1"
-description = "Quotes App written in Go"
 command = """
-  mkdir -p $out/{lib,bin}
-  cp -pr quotes.json $out/lib
-	go mod tidy
-  go build -trimpath -o $out/bin/quotes-app-go main.go
-  chmod +x $out/bin/quotes-app-go
+mkdir -p $out/{lib,bin}
+cp -pr quotes.json $out/lib
+go mod tidy
+go build -trimpath -o $out/bin/quotes-app-go main.go
+chmod +x $out/bin/quotes-nixcon
 """
 
 
