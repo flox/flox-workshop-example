@@ -1,30 +1,58 @@
-# Quotes App (Go + Redis)
+# Quotes App (Go)
 
-A tiny HTTP API that serves quotes loaded from Redis.
+A tiny HTTP API that serves quotes from a JSON file or Redis.
 
 ## Overview
 
-Loads a JSON array from Redis key quotesjson at startup.
+Loads quotes lazily on first request from either a local JSON file or Redis.
+Caches in memory and serves over HTTP.
 
-Caches the array in memory and serves it over HTTP.
+## Endpoints
 
-## Endpoints:
+- `GET /quotes` — return all quotes
+- `GET /quotes/{index}` — return a single quote by zero-based index
 
-GET /quotes — return all quotes.
+## Usage
 
-GET /quotes/{index} — return a single quote by zero-based index.
+```bash
+# Load from a JSON file
+go run main.go quotes.json
 
-## Getting started
+# Load from Redis
+go run main.go redis
+```
 
-Start the app for local development:
-`go run main.go`
+An argument is required. Running without one shows usage help:
 
-Populate the DB for local development:
-`redis-cli SET quotesjson "$(cat quotes.json)"`
+```
+Usage: quotes-app <quotes.json | redis>
+  quotes.json  - path to a JSON file containing quotes
+  redis        - load quotes from Redis
+```
+
+## Redis Setup
+
+When using Redis as source, populate the data first:
+
+```bash
+redis-cli SET quotesjson "$(cat quotes.json)"
+```
+
+Configure Redis port via environment variable (default: 6379):
+
+```bash
+REDISPORT=6379 go run main.go redis
+```
+
+## Testing
+
+```bash
+go test -v ./...
+```
 
 ## Build
 
-```
+```bash
 mkdir -p $out/{lib,bin}
 cp -pr quotes.json $out/lib
 go mod tidy
