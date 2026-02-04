@@ -193,6 +193,64 @@ Others can now use your published package in their environments.
 
 Your app is now available as a reusable package on FloxHub!
 
+## Bonus Lab: Flox & AI
+
+Flox integrates with AI coding assistants through MCP (Model Context Protocol).
+
+### Claude Code Setup
+
+Install the Flox MCP server (into your default environment):
+
+```bash
+flox install flox/flox-mcp-server
+```
+
+Or activate it directly:
+
+```bash
+flox activate -r flox/flox-mcp-server
+```
+
+Install the Flox plugin in Claude Code:
+
+```bash
+/plugin marketplace add flox/flox-agentic
+/plugin install flox@flox-agentic
+```
+
+The plugin includes 7 specialized skills:
+
+- **flox-environments** - Package management and environment setup
+- **flox-services** - Service configuration and orchestration
+- **flox-builds** - Building and packaging applications
+- **flox-containers** - Docker/Podman containerization
+- **flox-publish** - Publishing packages to FloxHub
+- **flox-sharing** - Environment composition and collaboration
+- **flox-cuda** - GPU/CUDA development (Linux only)
+
+### Other Editors
+
+For Cursor, add to `~/.cursor/mcp.json`:
+
+```json
+{
+  "mcpServers": {
+    "flox": {
+      "command": "flox-mcp"
+    }
+  }
+}
+```
+
+Now your AI assistant understands Flox! Try asking it to:
+
+- Create a new Flox environment for a Python project
+- Add a service to your manifest
+- Help debug environment issues
+- Build and publish a package
+
+AI + reproducible environments = superpower.
+
 ---
 
 ## Reference
