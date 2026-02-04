@@ -79,6 +79,16 @@ func ensureQuotesLoaded() {
 	quotesOnce.Do(loadQuotes)
 }
 
+func getIndex(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json")
+	endpoints := map[string]string{
+		"GET /":               "This help message",
+		"GET /quotes":         "Return all quotes",
+		"GET /quotes/{index}": "Return a single quote by zero-based index",
+	}
+	json.NewEncoder(w).Encode(endpoints)
+}
+
 func getAllQuotes(w http.ResponseWriter, r *http.Request) {
 	ensureQuotesLoaded()
 	w.Header().Set("Content-Type", "application/json")
@@ -121,6 +131,7 @@ func main() {
 	}
 
 	r := mux.NewRouter()
+	r.HandleFunc("/", getIndex).Methods("GET")
 	r.HandleFunc("/quotes", getAllQuotes).Methods("GET")
 	r.HandleFunc("/quotes/{index}", getQuoteByIndex).Methods("GET")
 

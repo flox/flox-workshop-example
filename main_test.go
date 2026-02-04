@@ -25,9 +25,37 @@ func setQuotesDirectly(q []interface{}) {
 
 func setupTestRouter() *mux.Router {
 	r := mux.NewRouter()
+	r.HandleFunc("/", getIndex).Methods("GET")
 	r.HandleFunc("/quotes", getAllQuotes).Methods("GET")
 	r.HandleFunc("/quotes/{index}", getQuoteByIndex).Methods("GET")
 	return r
+}
+
+func TestGetIndex(t *testing.T) {
+	r := setupTestRouter()
+	req := httptest.NewRequest("GET", "/", nil)
+	w := httptest.NewRecorder()
+
+	r.ServeHTTP(w, req)
+
+	if w.Code != http.StatusOK {
+		t.Errorf("Expected status 200, got %d", w.Code)
+	}
+
+	var result map[string]string
+	if err := json.Unmarshal(w.Body.Bytes(), &result); err != nil {
+		t.Fatalf("Failed to parse response: %v", err)
+	}
+
+	if _, ok := result["GET /"]; !ok {
+		t.Error("Expected 'GET /' in response")
+	}
+	if _, ok := result["GET /quotes"]; !ok {
+		t.Error("Expected 'GET /quotes' in response")
+	}
+	if _, ok := result["GET /quotes/{index}"]; !ok {
+		t.Error("Expected 'GET /quotes/{index}' in response")
+	}
 }
 
 func TestLoadQuotesFromFile(t *testing.T) {
