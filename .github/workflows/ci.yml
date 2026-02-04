@@ -1,0 +1,25 @@
+name: "CI"
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  test:
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: "actions/checkout@v4"
+
+      - name: "Install Flox"
+        uses: "flox/install-flox-action@main"
+
+      - name: "Lint Go code"
+        run: "flox activate -r flox/go -- go vet ./..."
+
+      - name: "Run Go tests"
+        run: "flox activate -r flox/go -- go test -v ./..."
+
+      - name: "Run workshop tests"
+        run: "./test_workshop.sh"
