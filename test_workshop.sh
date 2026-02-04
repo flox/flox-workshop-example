@@ -39,6 +39,19 @@ kill_port_3000() {
     sleep 1
 }
 
+wait_for_server() {
+    local retries=30
+    local i=0
+    while [[ $i -lt $retries ]]; do
+        if curl -s http://localhost:3000/ > /dev/null 2>&1; then
+            return 0
+        fi
+        sleep 1
+        ((i++))
+    done
+    return 1
+}
+
 # Kill any existing process on port 3000
 kill_port_3000
 
@@ -71,7 +84,7 @@ pass "flox install go"
 # Run app with flox and test endpoints
 flox activate -- go run main.go quotes.json &
 APP_PID=$!
-sleep 3
+wait_for_server || fail "Server failed to start"
 
 # Test endpoints
 curl -s http://localhost:3000/ | grep -q "GET /quotes" && pass "GET / returns endpoints" || fail "GET / failed"
@@ -110,13 +123,30 @@ pass "Added redis service config"
 cat > test_redis.sh << 'TESTSCRIPT'
 #!/usr/bin/env bash
 set -e
-sleep 2
+
+wait_for_redis() {
+    for i in {1..30}; do
+        redis-cli -p $REDISPORT ping > /dev/null 2>&1 && return 0
+        sleep 1
+    done
+    return 1
+}
+
+wait_for_server() {
+    for i in {1..30}; do
+        curl -s http://localhost:3000/ > /dev/null 2>&1 && return 0
+        sleep 1
+    done
+    return 1
+}
+
+wait_for_redis
 redis-cli -p $REDISPORT SET quotesjson "$(cat quotes.json)"
 echo "Quotes loaded into Redis"
 
 go run main.go redis &
 APP_PID=$!
-sleep 3
+wait_for_server
 RESULT=$(curl -s http://localhost:3000/quotes)
 kill $APP_PID 2>/dev/null || true
 wait $APP_PID 2>/dev/null || true
@@ -150,11 +180,29 @@ pass "Replaced manifest with includes"
 # Create helper script to test composed environment
 cat > test_composed.sh << 'TESTSCRIPT'
 #!/usr/bin/env bash
-sleep 2
+set -e
+
+wait_for_redis() {
+    for i in {1..30}; do
+        redis-cli -p $REDISPORT ping > /dev/null 2>&1 && return 0
+        sleep 1
+    done
+    return 1
+}
+
+wait_for_server() {
+    for i in {1..30}; do
+        curl -s http://localhost:3000/ > /dev/null 2>&1 && return 0
+        sleep 1
+    done
+    return 1
+}
+
+wait_for_redis
 redis-cli -p $REDISPORT SET quotesjson "$(cat quotes.json)"
 go run main.go redis &
 APP_PID=$!
-sleep 3
+wait_for_server
 RESULT=$(curl -s http://localhost:3000/quotes)
 kill $APP_PID 2>/dev/null || true
 echo "$RESULT" | grep -q "Steve Jobs"
@@ -189,7 +237,7 @@ pass "flox build succeeded"
 
 ./result-quotes-app/bin/quotes-app ./result-quotes-app/share/quotes.json &
 APP_PID=$!
-sleep 2
+wait_for_server || fail "Built binary failed to start"
 
 curl -s http://localhost:3000/quotes | grep -q "Steve Jobs" && pass "Built binary serves quotes" || fail "Built binary failed"
 
