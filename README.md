@@ -125,7 +125,10 @@ version = 1
 [vars]
 
 [include]
-environments = ["flox/go", "flox/redis"]
+environments = [
+    { remote = "flox/go" },
+    { remote = "flox/redis" }
+]
 ```
 
 That's it! The `flox/go` environment provides Go, and `flox/redis` provides
