@@ -58,27 +58,27 @@
     {
       "attr_path": "go",
       "broken": false,
-      "derivation": "/nix/store/64rdsj50y7y019hy08vjn9bbkqs4xv94-go-1.24.5.drv",
+      "derivation": "/nix/store/h19kjqi10ynjk0i6scllhv82gx45p58w-go-1.25.5.drv",
       "description": "Go Programming language",
       "install_id": "go",
       "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=20075955deac2583bb12f07151c2df830ef346b4",
-      "name": "go-1.24.5",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e6eae2ee2110f3d31110d5c222cd395303343b08",
+      "name": "go-1.25.5",
       "pname": "go",
-      "rev": "20075955deac2583bb12f07151c2df830ef346b4",
-      "rev_count": 846535,
-      "rev_date": "2025-08-19T15:00:17Z",
-      "scrape_date": "2025-08-24T15:38:53.852940Z",
+      "rev": "e6eae2ee2110f3d31110d5c222cd395303343b08",
+      "rev_count": 939624,
+      "rev_date": "2026-02-03T10:48:24Z",
+      "scrape_date": "2026-02-04T04:35:57.412991Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "1.24.5",
+      "version": "1.25.5",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/kw1vd98s15vj700m3gx2x2xca2z477i3-go-1.24.5"
+        "out": "/nix/store/wh88zz6r1ihcp2mm7ys1f2anp8aga6n2-go-1.25.5"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -87,27 +87,27 @@
     {
       "attr_path": "go",
       "broken": false,
-      "derivation": "/nix/store/w5wx665g669d26ms6q6wyl7ga4vqqfbh-go-1.24.5.drv",
+      "derivation": "/nix/store/32f3plvjz6apyxgi010l0c0ngqydzbyj-go-1.25.5.drv",
       "description": "Go Programming language",
       "install_id": "go",
       "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=20075955deac2583bb12f07151c2df830ef346b4",
-      "name": "go-1.24.5",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e6eae2ee2110f3d31110d5c222cd395303343b08",
+      "name": "go-1.25.5",
       "pname": "go",
-      "rev": "20075955deac2583bb12f07151c2df830ef346b4",
-      "rev_count": 846535,
-      "rev_date": "2025-08-19T15:00:17Z",
-      "scrape_date": "2025-08-24T16:05:26.651219Z",
+      "rev": "e6eae2ee2110f3d31110d5c222cd395303343b08",
+      "rev_count": 939624,
+      "rev_date": "2026-02-03T10:48:24Z",
+      "scrape_date": "2026-02-04T05:05:35.666386Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "1.24.5",
+      "version": "1.25.5",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/5bzlaj0c4mqw9p0zrcx5g9vz16vd45dl-go-1.24.5"
+        "out": "/nix/store/k3knzdi0v21bf2m7vcxpdy1jnqg1h0zk-go-1.25.5"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
@@ -116,27 +116,27 @@
     {
       "attr_path": "go",
       "broken": false,
-      "derivation": "/nix/store/sblxqar4xfxgxy55z3h3mdfgrp7vm1lj-go-1.24.5.drv",
+      "derivation": "/nix/store/5m70w19x64mr74nzlmlmv2mia2k6mykd-go-1.25.5.drv",
       "description": "Go Programming language",
       "install_id": "go",
       "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=20075955deac2583bb12f07151c2df830ef346b4",
-      "name": "go-1.24.5",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e6eae2ee2110f3d31110d5c222cd395303343b08",
+      "name": "go-1.25.5",
       "pname": "go",
-      "rev": "20075955deac2583bb12f07151c2df830ef346b4",
-      "rev_count": 846535,
-      "rev_date": "2025-08-19T15:00:17Z",
-      "scrape_date": "2025-08-24T16:29:26.066648Z",
+      "rev": "e6eae2ee2110f3d31110d5c222cd395303343b08",
+      "rev_count": 939624,
+      "rev_date": "2026-02-03T10:48:24Z",
+      "scrape_date": "2026-02-04T05:33:58.917268Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "1.24.5",
+      "version": "1.25.5",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/b72n20ixzl5ja9vciwahkr30bhmsn5jc-go-1.24.5"
+        "out": "/nix/store/bwdahzajhqd5x14dbvkqww5f1wpsxif3-go-1.25.5"
       },
       "system": "x86_64-darwin",
       "group": "toplevel",
@@ -145,27 +145,27 @@
     {
       "attr_path": "go",
       "broken": false,
-      "derivation": "/nix/store/n3ggn80wfjjbrgnlh0q8zrmfmdlcmd0b-go-1.24.5.drv",
+      "derivation": "/nix/store/3xvlqyw28f7hk7qmk3f18pzi6c7ymzy8-go-1.25.5.drv",
       "description": "Go Programming language",
       "install_id": "go",
       "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=20075955deac2583bb12f07151c2df830ef346b4",
-      "name": "go-1.24.5",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e6eae2ee2110f3d31110d5c222cd395303343b08",
+      "name": "go-1.25.5",
       "pname": "go",
-      "rev": "20075955deac2583bb12f07151c2df830ef346b4",
-      "rev_count": 846535,
-      "rev_date": "2025-08-19T15:00:17Z",
-      "scrape_date": "2025-08-24T16:57:27.960410Z",
+      "rev": "e6eae2ee2110f3d31110d5c222cd395303343b08",
+      "rev_count": 939624,
+      "rev_date": "2026-02-03T10:48:24Z",
+      "scrape_date": "2026-02-04T06:07:09.800761Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "1.24.5",
+      "version": "1.25.5",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/y4awwzp30ka130wmjrpaqjmjdf9p010w-go-1.24.5"
+        "out": "/nix/store/zzvsjgylnphvhms3lgr2qlwdxmc68z66-go-1.25.5"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -174,27 +174,28 @@
     {
       "attr_path": "gum",
       "broken": false,
-      "derivation": "/nix/store/pg3cdd51qdyvz1y4f40sppnzi48w6kql-gum-0.16.2.drv",
+      "derivation": "/nix/store/a1l884a7ihsnpbbsv7dgyhrhxr0dy88g-gum-0.17.0.drv",
       "description": "Tasty Bubble Gum for your shell",
       "install_id": "gum",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=20075955deac2583bb12f07151c2df830ef346b4",
-      "name": "gum-0.16.2",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e6eae2ee2110f3d31110d5c222cd395303343b08",
+      "name": "gum-0.17.0",
       "pname": "gum",
-      "rev": "20075955deac2583bb12f07151c2df830ef346b4",
-      "rev_count": 846535,
-      "rev_date": "2025-08-19T15:00:17Z",
-      "scrape_date": "2025-08-24T15:38:54.054101Z",
+      "rev": "e6eae2ee2110f3d31110d5c222cd395303343b08",
+      "rev_count": 939624,
+      "rev_date": "2026-02-03T10:48:24Z",
+      "scrape_date": "2026-02-04T04:35:57.632799Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "0.16.2",
+      "version": "0.17.0",
       "outputs_to_install": [
+        "out",
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/s9w5fifwbcl92x3r55r9lbiwmlyrlfig-gum-0.16.2"
+        "out": "/nix/store/pjh70r1gc4ylrc925kp6k74223n2r0hb-gum-0.17.0"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -203,27 +204,27 @@
     {
       "attr_path": "gum",
       "broken": false,
-      "derivation": "/nix/store/h7k81r0f4j065q10xnl4h3dib8vyw8qj-gum-0.16.2.drv",
+      "derivation": "/nix/store/lx61h7w2incwsb6ijqi26qw14q47l7iv-gum-0.17.0.drv",
       "description": "Tasty Bubble Gum for your shell",
       "install_id": "gum",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=20075955deac2583bb12f07151c2df830ef346b4",
-      "name": "gum-0.16.2",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e6eae2ee2110f3d31110d5c222cd395303343b08",
+      "name": "gum-0.17.0",
       "pname": "gum",
-      "rev": "20075955deac2583bb12f07151c2df830ef346b4",
-      "rev_count": 846535,
-      "rev_date": "2025-08-19T15:00:17Z",
-      "scrape_date": "2025-08-24T16:05:26.984400Z",
+      "rev": "e6eae2ee2110f3d31110d5c222cd395303343b08",
+      "rev_count": 939624,
+      "rev_date": "2026-02-03T10:48:24Z",
+      "scrape_date": "2026-02-04T05:05:36.033454Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "0.16.2",
+      "version": "0.17.0",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/7z4r5akxz40nfji1jz4bdk99k1biwdkc-gum-0.16.2"
+        "out": "/nix/store/7c6164p77vlzpbj5npz4nrn0gvylks50-gum-0.17.0"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
@@ -232,27 +233,27 @@
     {
       "attr_path": "gum",
       "broken": false,
-      "derivation": "/nix/store/yv03ry4f80wp5cgxdb1d13l67n89lrv0-gum-0.16.2.drv",
+      "derivation": "/nix/store/wd6qk0640rnnxi361ry2x2fb7bxsdixv-gum-0.17.0.drv",
       "description": "Tasty Bubble Gum for your shell",
       "install_id": "gum",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=20075955deac2583bb12f07151c2df830ef346b4",
-      "name": "gum-0.16.2",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e6eae2ee2110f3d31110d5c222cd395303343b08",
+      "name": "gum-0.17.0",
       "pname": "gum",
-      "rev": "20075955deac2583bb12f07151c2df830ef346b4",
-      "rev_count": 846535,
-      "rev_date": "2025-08-19T15:00:17Z",
-      "scrape_date": "2025-08-24T16:29:26.288938Z",
+      "rev": "e6eae2ee2110f3d31110d5c222cd395303343b08",
+      "rev_count": 939624,
+      "rev_date": "2026-02-03T10:48:24Z",
+      "scrape_date": "2026-02-04T05:33:59.141536Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "0.16.2",
+      "version": "0.17.0",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/r6q70l6jqmgmmv8br9dpvh23c4lqkapq-gum-0.16.2"
+        "out": "/nix/store/xff8di1nlgqx2k7q5z6ma7jc02k5ravf-gum-0.17.0"
       },
       "system": "x86_64-darwin",
       "group": "toplevel",
@@ -261,27 +262,27 @@
     {
       "attr_path": "gum",
       "broken": false,
-      "derivation": "/nix/store/1rl9xkxjazii9zr7ci73sjk20dp4v2yp-gum-0.16.2.drv",
+      "derivation": "/nix/store/wkbcrdfhd3cifqw3gllsz2bsmik82c7v-gum-0.17.0.drv",
       "description": "Tasty Bubble Gum for your shell",
       "install_id": "gum",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=20075955deac2583bb12f07151c2df830ef346b4",
-      "name": "gum-0.16.2",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e6eae2ee2110f3d31110d5c222cd395303343b08",
+      "name": "gum-0.17.0",
       "pname": "gum",
-      "rev": "20075955deac2583bb12f07151c2df830ef346b4",
-      "rev_count": 846535,
-      "rev_date": "2025-08-19T15:00:17Z",
-      "scrape_date": "2025-08-24T16:57:28.362539Z",
+      "rev": "e6eae2ee2110f3d31110d5c222cd395303343b08",
+      "rev_count": 939624,
+      "rev_date": "2026-02-03T10:48:24Z",
+      "scrape_date": "2026-02-04T06:07:10.198745Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "0.16.2",
+      "version": "0.17.0",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/ghqbmfsmdhccms652yx3n0mkj86jlz8r-gum-0.16.2"
+        "out": "/nix/store/99an674pwfn3fnhl050kkng9v8a3l1qb-gum-0.17.0"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -290,17 +291,17 @@
     {
       "attr_path": "httpie",
       "broken": false,
-      "derivation": "/nix/store/j7ph58mzx1xqc82p417iwf7c95rmijmd-python3.13-httpie-3.2.4.drv",
+      "derivation": "/nix/store/n7bsynk4lpndws3fqcmb11pqsdism7mk-python3.13-httpie-3.2.4.drv",
       "description": "Command line HTTP client whose goal is to make CLI human-friendly",
       "install_id": "httpie",
       "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=20075955deac2583bb12f07151c2df830ef346b4",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e6eae2ee2110f3d31110d5c222cd395303343b08",
       "name": "httpie-3.2.4",
       "pname": "httpie",
-      "rev": "20075955deac2583bb12f07151c2df830ef346b4",
-      "rev_count": 846535,
-      "rev_date": "2025-08-19T15:00:17Z",
-      "scrape_date": "2025-08-24T15:38:54.184968Z",
+      "rev": "e6eae2ee2110f3d31110d5c222cd395303343b08",
+      "rev_count": 939624,
+      "rev_date": "2026-02-03T10:48:24Z",
+      "scrape_date": "2026-02-04T04:36:11.477391Z",
       "stabilities": [
         "unstable"
       ],
@@ -310,8 +311,8 @@
         "out"
       ],
       "outputs": {
-        "dist": "/nix/store/35fl1gb4kb5952vnz61rg73dkq380442-python3.13-httpie-3.2.4-dist",
-        "out": "/nix/store/xr231p4q6sib62ya06dmal5mqkx3mw71-python3.13-httpie-3.2.4"
+        "dist": "/nix/store/nm5f068zdlxj894a1573x8ljbpficfpp-python3.13-httpie-3.2.4-dist",
+        "out": "/nix/store/y1w48hyy8q67hrw1vabkhy1l0k38bmqf-python3.13-httpie-3.2.4"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -320,17 +321,17 @@
     {
       "attr_path": "httpie",
       "broken": false,
-      "derivation": "/nix/store/94d9bjx61wffvygxcxy11ds4jgvry0xz-python3.13-httpie-3.2.4.drv",
+      "derivation": "/nix/store/7vwn25qcrvg3m49i8y7q46ax7vgdx1cn-python3.13-httpie-3.2.4.drv",
       "description": "Command line HTTP client whose goal is to make CLI human-friendly",
       "install_id": "httpie",
       "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=20075955deac2583bb12f07151c2df830ef346b4",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e6eae2ee2110f3d31110d5c222cd395303343b08",
       "name": "httpie-3.2.4",
       "pname": "httpie",
-      "rev": "20075955deac2583bb12f07151c2df830ef346b4",
-      "rev_count": 846535,
-      "rev_date": "2025-08-19T15:00:17Z",
-      "scrape_date": "2025-08-24T16:05:27.753081Z",
+      "rev": "e6eae2ee2110f3d31110d5c222cd395303343b08",
+      "rev_count": 939624,
+      "rev_date": "2026-02-03T10:48:24Z",
+      "scrape_date": "2026-02-04T05:05:52.353929Z",
       "stabilities": [
         "unstable"
       ],
@@ -340,8 +341,8 @@
         "out"
       ],
       "outputs": {
-        "dist": "/nix/store/f49v94sdzwwm6ibhggkrpxvi3yg0ari9-python3.13-httpie-3.2.4-dist",
-        "out": "/nix/store/cgw4gimr0im69ffsdyqryssq5zr86npa-python3.13-httpie-3.2.4"
+        "dist": "/nix/store/pxb9km3pqs6fk927n4iwymx1pca6h6lr-python3.13-httpie-3.2.4-dist",
+        "out": "/nix/store/pfhn0jhz16dpz0sjpb5yjgx7y8nw0828-python3.13-httpie-3.2.4"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
@@ -350,17 +351,17 @@
     {
       "attr_path": "httpie",
       "broken": false,
-      "derivation": "/nix/store/l682nsc638a138g9ry40fx2fphkxmxic-python3.13-httpie-3.2.4.drv",
+      "derivation": "/nix/store/x0y67y79c39xb2csjf3i6p7hmhagkf4v-python3.13-httpie-3.2.4.drv",
       "description": "Command line HTTP client whose goal is to make CLI human-friendly",
       "install_id": "httpie",
       "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=20075955deac2583bb12f07151c2df830ef346b4",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e6eae2ee2110f3d31110d5c222cd395303343b08",
       "name": "httpie-3.2.4",
       "pname": "httpie",
-      "rev": "20075955deac2583bb12f07151c2df830ef346b4",
-      "rev_count": 846535,
-      "rev_date": "2025-08-19T15:00:17Z",
-      "scrape_date": "2025-08-24T16:29:26.425770Z",
+      "rev": "e6eae2ee2110f3d31110d5c222cd395303343b08",
+      "rev_count": 939624,
+      "rev_date": "2026-02-03T10:48:24Z",
+      "scrape_date": "2026-02-04T05:34:13.294165Z",
       "stabilities": [
         "unstable"
       ],
@@ -370,8 +371,8 @@
         "out"
       ],
       "outputs": {
-        "dist": "/nix/store/lgi3zh376dbr2iawhhd8hw958cdsmpbw-python3.13-httpie-3.2.4-dist",
-        "out": "/nix/store/ymzvbkq13cf45sdzfsvdnx1rm0d9d8hx-python3.13-httpie-3.2.4"
+        "dist": "/nix/store/kv64rb7l0yqip04w6hpc29jsf4akc3f6-python3.13-httpie-3.2.4-dist",
+        "out": "/nix/store/lidbql7gl3qp78svqy5x80zy28r901ji-python3.13-httpie-3.2.4"
       },
       "system": "x86_64-darwin",
       "group": "toplevel",
@@ -380,17 +381,17 @@
     {
       "attr_path": "httpie",
       "broken": false,
-      "derivation": "/nix/store/543a9hcg4vly8an48ymiqxwgfhykmgkx-python3.13-httpie-3.2.4.drv",
+      "derivation": "/nix/store/lpglbrf3mpd7v5nk9rpzzyldw6qschd5-python3.13-httpie-3.2.4.drv",
       "description": "Command line HTTP client whose goal is to make CLI human-friendly",
       "install_id": "httpie",
       "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=20075955deac2583bb12f07151c2df830ef346b4",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e6eae2ee2110f3d31110d5c222cd395303343b08",
       "name": "httpie-3.2.4",
       "pname": "httpie",
-      "rev": "20075955deac2583bb12f07151c2df830ef346b4",
-      "rev_count": 846535,
-      "rev_date": "2025-08-19T15:00:17Z",
-      "scrape_date": "2025-08-24T16:57:29.175931Z",
+      "rev": "e6eae2ee2110f3d31110d5c222cd395303343b08",
+      "rev_count": 939624,
+      "rev_date": "2026-02-03T10:48:24Z",
+      "scrape_date": "2026-02-04T06:07:27.210388Z",
       "stabilities": [
         "unstable"
       ],
@@ -400,8 +401,8 @@
         "out"
       ],
       "outputs": {
-        "dist": "/nix/store/0rz883gyx30ggxkh51dsqw0px0dxmj30-python3.13-httpie-3.2.4-dist",
-        "out": "/nix/store/5cc08zz45zfrl0ka58abjcp8hwhib7zp-python3.13-httpie-3.2.4"
+        "dist": "/nix/store/yyzh6nn5x37a83g723yq6mqly0vakalh-python3.13-httpie-3.2.4-dist",
+        "out": "/nix/store/jawfhwfc7lvyyg898xzfbdsx6pxpxpd0-python3.13-httpie-3.2.4"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -410,27 +411,27 @@
     {
       "attr_path": "redis",
       "broken": false,
-      "derivation": "/nix/store/q1cxspk28mfb8zqpaa3aiyl3n59rwzdn-redis-8.0.3.drv",
+      "derivation": "/nix/store/d9p200j585rf0ywh2p6nxlx6ayg22v1j-redis-8.2.3.drv",
       "description": "Open source, advanced key-value store",
       "install_id": "redis",
       "license": "AGPL-3.0-only",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=20075955deac2583bb12f07151c2df830ef346b4",
-      "name": "redis-8.0.3",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e6eae2ee2110f3d31110d5c222cd395303343b08",
+      "name": "redis-8.2.3",
       "pname": "redis",
-      "rev": "20075955deac2583bb12f07151c2df830ef346b4",
-      "rev_count": 846535,
-      "rev_date": "2025-08-19T15:00:17Z",
-      "scrape_date": "2025-08-24T15:39:37.646425Z",
+      "rev": "e6eae2ee2110f3d31110d5c222cd395303343b08",
+      "rev_count": 939624,
+      "rev_date": "2026-02-03T10:48:24Z",
+      "scrape_date": "2026-02-04T04:37:22.560949Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "8.0.3",
+      "version": "8.2.3",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/zyyppkv563hb1cwg8aawl1cw25vdb9bv-redis-8.0.3"
+        "out": "/nix/store/mm3ki4xxh3x6vbvv4494i6i96q2d2hkn-redis-8.2.3"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -439,27 +440,27 @@
     {
       "attr_path": "redis",
       "broken": false,
-      "derivation": "/nix/store/1qaswfgn83c0mdgznd20f3kf3b1ffygb-redis-8.0.3.drv",
+      "derivation": "/nix/store/mn2b7nxv6ciqwdxcd0j0wlja1jmrlzd7-redis-8.2.3.drv",
       "description": "Open source, advanced key-value store",
       "install_id": "redis",
       "license": "AGPL-3.0-only",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=20075955deac2583bb12f07151c2df830ef346b4",
-      "name": "redis-8.0.3",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e6eae2ee2110f3d31110d5c222cd395303343b08",
+      "name": "redis-8.2.3",
       "pname": "redis",
-      "rev": "20075955deac2583bb12f07151c2df830ef346b4",
-      "rev_count": 846535,
-      "rev_date": "2025-08-19T15:00:17Z",
-      "scrape_date": "2025-08-24T16:06:40.423809Z",
+      "rev": "e6eae2ee2110f3d31110d5c222cd395303343b08",
+      "rev_count": 939624,
+      "rev_date": "2026-02-03T10:48:24Z",
+      "scrape_date": "2026-02-04T05:07:23.896690Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "8.0.3",
+      "version": "8.2.3",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/sg35kg53lc9n1z1xabx0cfbrc9kkgzzd-redis-8.0.3"
+        "out": "/nix/store/z9bp2clw7p1hpf6zr434qzlad84pb738-redis-8.2.3"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
@@ -468,27 +469,27 @@
     {
       "attr_path": "redis",
       "broken": false,
-      "derivation": "/nix/store/58radzlkz22wh23c7bwsw94r5bd5sqza-redis-8.0.3.drv",
+      "derivation": "/nix/store/y186k0ps4n4pwiwra8mkbaxjkwjrkynf-redis-8.2.3.drv",
       "description": "Open source, advanced key-value store",
       "install_id": "redis",
       "license": "AGPL-3.0-only",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=20075955deac2583bb12f07151c2df830ef346b4",
-      "name": "redis-8.0.3",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e6eae2ee2110f3d31110d5c222cd395303343b08",
+      "name": "redis-8.2.3",
       "pname": "redis",
-      "rev": "20075955deac2583bb12f07151c2df830ef346b4",
-      "rev_count": 846535,
-      "rev_date": "2025-08-19T15:00:17Z",
-      "scrape_date": "2025-08-24T16:30:06.520147Z",
+      "rev": "e6eae2ee2110f3d31110d5c222cd395303343b08",
+      "rev_count": 939624,
+      "rev_date": "2026-02-03T10:48:24Z",
+      "scrape_date": "2026-02-04T05:35:27.633435Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "8.0.3",
+      "version": "8.2.3",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/3w0kns1p5b810mklnvy76dgzj8v9g1y8-redis-8.0.3"
+        "out": "/nix/store/5mrw7f1pwrw5jgqbvzr6px5dvh0fi6b5-redis-8.2.3"
       },
       "system": "x86_64-darwin",
       "group": "toplevel",
@@ -497,27 +498,27 @@
     {
       "attr_path": "redis",
       "broken": false,
-      "derivation": "/nix/store/0wbb40g78d2npiw2rsp4k3xn8h8qp68x-redis-8.0.3.drv",
+      "derivation": "/nix/store/p6w3zgcr9f0wdbrraj503ywsy5cqmhwz-redis-8.2.3.drv",
       "description": "Open source, advanced key-value store",
       "install_id": "redis",
       "license": "AGPL-3.0-only",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=20075955deac2583bb12f07151c2df830ef346b4",
-      "name": "redis-8.0.3",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e6eae2ee2110f3d31110d5c222cd395303343b08",
+      "name": "redis-8.2.3",
       "pname": "redis",
-      "rev": "20075955deac2583bb12f07151c2df830ef346b4",
-      "rev_count": 846535,
-      "rev_date": "2025-08-19T15:00:17Z",
-      "scrape_date": "2025-08-24T16:58:43.857999Z",
+      "rev": "e6eae2ee2110f3d31110d5c222cd395303343b08",
+      "rev_count": 939624,
+      "rev_date": "2026-02-03T10:48:24Z",
+      "scrape_date": "2026-02-04T06:09:02.384605Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "8.0.3",
+      "version": "8.2.3",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/1klgzhcjnny15c4y0wm4wjgdaypzlfkd-redis-8.0.3"
+        "out": "/nix/store/0s74mlr34pvblfcci0cwi5qzisk830cc-redis-8.2.3"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
