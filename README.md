@@ -251,6 +251,70 @@ Now your AI assistant understands Flox! Try asking it to:
 
 AI + reproducible environments = superpower.
 
+## Bonus Lab 2: Nix Expression Builds
+
+Lab 4 used a manifest build (Bash script). For guaranteed reproducibility,
+you can use a Nix expression instead.
+
+Create the Nix package file:
+
+```bash
+mkdir -p .flox/pkgs
+```
+
+Create `.flox/pkgs/quotes-app-nix.nix`:
+
+```nix
+{ buildGoModule, lib }:
+
+buildGoModule {
+  pname = "quotes-app-nix";
+  version = "1.0.0";
+
+  src = ../../.;
+
+  vendorHash = null;  # Uses go.sum for dependencies
+
+  postInstall = ''
+    mkdir -p $out/share
+    cp ${../../quotes.json} $out/share/quotes.json
+  '';
+
+  meta = {
+    description = "A tiny HTTP API that serves quotes";
+    mainProgram = "quotes-app-go";
+  };
+}
+```
+
+Make sure all files are tracked by git:
+
+```bash
+git add .flox/pkgs/
+```
+
+Build with Nix:
+
+```bash
+flox build .#quotes-app-nix
+```
+
+Test the built binary:
+
+```bash
+./result/bin/quotes-app-go ./result/share/quotes.json
+```
+
+Note: Package names must be unique. We use `quotes-app-nix` to avoid conflict
+with the manifest build `quotes-app` from Lab 4.
+
+**Why Nix expressions?**
+
+- Builds are isolated in a sandbox (no host system leakage)
+- Purely functional - same inputs always produce same outputs
+- Better for CI/CD and production deployments
+- Access to the full Nix ecosystem of build helpers
+
 ---
 
 ## Reference
