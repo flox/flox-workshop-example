@@ -10,10 +10,12 @@ jobs:
   test:
     runs-on: "ubuntu-latest"
     steps:
-      - uses: "actions/checkout@v4"
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+
 
       - name: "Install Flox"
-        uses: "flox/install-flox-action@main"
+        uses: flox/install-flox-action@dc880156f423b1b9f03534c3ccbb3bc3bb8c223e # main
+
 
       - name: "Lint Go code"
         run: "flox activate -r flox/go -- go vet ./..."
