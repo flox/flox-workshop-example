@@ -14,7 +14,7 @@ jobs:
 
 
       - name: "Install Flox"
-        uses: flox/install-flox-action@dc880156f423b1b9f03534c3ccbb3bc3bb8c223e # main
+        uses: flox/install-flox-action@6e70b2624cea62b0f11ea4a28e719fe1c86c028b # main
 
 
       - name: "Lint Go code"
