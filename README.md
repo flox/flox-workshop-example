@@ -195,7 +195,8 @@ Your app is now available as a reusable package on FloxHub!
 
 ## Bonus Lab: Flox & AI
 
-Flox integrates with AI coding assistants through MCP (Model Context Protocol).
+Flox integrates with AI coding assistants through agent skills and MCP (Model
+Context Protocol).
 
 ### Claude Code Setup
 
@@ -214,19 +215,19 @@ flox activate -r flox/flox-mcp-server
 Install the Flox plugin in Claude Code:
 
 ```bash
-/plugin marketplace add flox/flox-agentic
-/plugin install flox@flox-agentic
+/plugin marketplace add flox/flox-skills
+/plugin install flox@flox-skills
 ```
 
-The plugin includes 7 specialized skills:
+The plugin includes 3 skills:
 
-- **flox-environments** - Package management and environment setup
-- **flox-services** - Service configuration and orchestration
-- **flox-builds** - Building and packaging applications
-- **flox-containers** - Docker/Podman containerization
-- **flox-publish** - Publishing packages to FloxHub
-- **flox-sharing** - Environment composition and collaboration
-- **flox-cuda** - GPU/CUDA development (Linux only)
+- **flox** - Environments, packages, services, builds, containers, publishing,
+  and sharing
+- **floxify** - Onboard an existing repo to Flox
+- **flox-debug** - Diagnose why a package doesn't resolve as expected
+
+See [flox/flox-skills](https://github.com/flox/flox-skills) for Codex and other
+agents.
 
 ### Other Editors
 
